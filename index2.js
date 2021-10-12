@@ -6,7 +6,7 @@ let cardsPizza = [
         },
         title: 'Пицца из половинок',
         description: 'Соберите свою пиццу 35 см с двумя разными вкусами',
-        cost: 'от 600 R',
+        cost: 'от 600 &#8381;',
         btn: 'Собрать',
         btnMobile: 'от 600 R',
     },
@@ -17,7 +17,7 @@ let cardsPizza = [
         },
         title: 'Пепперони-сердце',
         description: 'Пикантная пепперони, моцарелла, томатный соус',
-        cost: 'от 625 R',
+        cost: 'от 625 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 625 R;',
     },
@@ -28,7 +28,7 @@ let cardsPizza = [
         },
         title: 'Пирог-сердце',
         description: 'Ананасы, брусника, сгущенное молоко',
-        cost: 'от 625 t',
+        cost: 'от 625 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 625 &#8381;',
     },
@@ -315,7 +315,7 @@ function createCard(massive, massiveId, classLength) {
     //let el = document.createElement('div')
     for (let i = 0; i < massive.length; i++){
         let card = `
-    <div class="main-card, ${classLength}">
+    <div class="main-card ${classLength}">
          <div class="main-card__image-wrapper">
             <img class="main-card__image" src="${massive[i].img.src}">
          </div>

@@ -197,10 +197,9 @@ a {
 }
 
 .new-items {
-    margin: 0 auto;
+    margin: 45px auto 0;
     max-width: 1280px;
     box-sizing: border-box;
-    margin-bottom: 40px;
 }
 
 .new-items__cards {
@@ -235,11 +234,12 @@ a {
 }
 
 .pizza-items {
+    margin-top: 70px;
 }
 
 .main-cards {
     max-width: 1060px;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-gap: 20px;
@@ -254,7 +254,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 60px;
-
 }
 
 .main-card_size-S {
@@ -315,6 +314,22 @@ a {
 
 .main-card_long {
     height: 425px;
+}
+
+.combo-items {
+    margin-top: 70px;
+}
+
+.starters-items {
+    margin-top: 70px;
+}
+
+.desserts-items {
+    margin-top: 70px;
+}
+
+.drinks-items {
+    margin-top: 70px;
 }
 
 .footer {
