@@ -106,6 +106,17 @@ let cardsCombo = [
             src: './images/combo.jpg',
             name: 'Изображение',
         },
+        title: '2 пиццы',
+        description: 'Самое поулярное комбо из 2 пицц 30см. Большой выбор',
+        cost: 'от 899 &#8381;',
+        btn: 'Собрать',
+        btnMobile: '899 &#8381;',
+    },
+    {
+        img: {
+            src: './images/combo.jpg',
+            name: 'Изображение',
+        },
         title: '2 пиццы и закуска',
         description: '2 пиццы 25 см и закуска на выбор. Для компании из 2–4 человек',
         cost: 'от 625 &#8381;',
@@ -340,9 +351,9 @@ function createCard(massive, massiveId, classLength) {
 function createSection() {
 }
 
-createCard(cardsPizza, 'pizza-cards', '.main-card_size-S')
-createCard(cardsCombo, 'combo-cards', '.main-card_size-S')
-createCard(cardsStarters, 'starters-cards', '.main-card_size-XL')
-createCard(cardDeserts, 'deserts-cards', '.main-card_size-L')
-createCard(cardsDrinks, 'drinks-cards')
+createCard(cardsPizza, 'pizza-cards', 'main-card_size-S')
+createCard(cardsCombo, 'combo-cards', 'main-card_size-S')
+createCard(cardsStarters, 'starters-cards', 'main-card_size-XL')
+createCard(cardDeserts, 'deserts-cards', 'main-card_size-L')
+createCard(cardsDrinks, 'drinks-cards', 'main-card_size-M')
 
