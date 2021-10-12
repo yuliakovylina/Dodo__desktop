@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let slider = [1, 2, 3, 4, 5];
+    //
+    // // let a = slider[0];
+    // // let b = slider[1];
+    // // let c = slider[2];
+    // // let x;
+    // console.log(slider);
+    // for (let i = 0; i < slider.length-1; i++) {
+    //         // slider[0] = slider[1];
+    //         // slider[1] = slider[2];
+    //         // slider[2] = slider[0];
+    //         // console.log(slider);
+    //        slider[i + 1] = slider[i] + slider[i + 1];
+    //        slider[i] = slider[i + 1] - slider [i];
+    //        slider[i + 1] = slider[i + 1]- slider[i];
+    // }
+    // console.log(slider)
+    //
+    // // a = 5;
+    // // b = 7;
+    // //
+    // // b = (a + b);
+    // // a = b - a;
+    // // b = b - a;
+    // //
+    // // console.log (a, b)
+
+    // let arr = [2, 7, 14, 2, 9, 33, 102];
+    // let maxNum = arr[0];
+    // let minNum = arr[0];
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] > maxNum) {
+    //         maxNum = arr[i]
+    //     } else if (arr[i] < minNum) {
+    //         minNum = arr[i]
+    //     }
+    // }
+    // console.log(maxNum, minNum);
+
+    let arr = [12, 7, 14, 2, 9, 33, 102];
+    for (let j = 0; j < arr.length - 1; j++) {
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                arr[i + 1] = arr[i] + arr [i + 1]
+                arr[i] = arr[i + 1] - arr[i]
+                arr[i + 1] = arr[i + 1] - arr[i]
+            }
+        }
+    }
+console.log(arr)
+
+
+
+</script>
+</body>
+</html>
