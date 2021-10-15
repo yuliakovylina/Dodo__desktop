@@ -36,32 +36,44 @@ a {
     color: black;
 }
 
-body {
-    margin: 300px 300px;
+.page {
     font-family: Nunito;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product-card {
+    position: relative;
     background-color: white;
     width:920px;
     height: 610px;
     display: flex;
     align-items: center;
     border-radius: 20px;
-    overflow: hidden;
 }
 
 .image__container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 540px;
-    height: 100px;
+}
+
+.product-card__outline {
+    position: relative;
+    z-index: 2;
+    width: 458px;
 }
 
 .product-card__image {
-    width: 372px;
-    height: 372px;
+    position: absolute;
+    top: 13%;
+    left: 18%;
+    z-index: 1;
+    width: 362px;
 }
 
 .main-container {
@@ -69,6 +81,8 @@ body {
     padding: 30px;
     box-sizing: border-box;
     width: 380px;
+    height: 610px;
+    border-radius: 20px;
 }
 
 .product-card__title{
@@ -168,7 +182,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .ingridient-item {
@@ -203,4 +216,23 @@ body {
     line-height: 19px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.product-card__button {
+    position: absolute;
+    bottom: 0;
+    width: 320px;
+    height: 48px;
+    color: white;
+    background-color: #F96900;
+    border-radius: 1000px;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.close-container {
+    position: absolute;
+    top: 20px;
+    right: -40px;
 }

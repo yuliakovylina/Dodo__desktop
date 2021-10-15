@@ -1,5 +1,5 @@
 let cardsPizza = [
-    {
+    {   id: 'Pizza01',
         img: {
             src: './images/main-card/polovinki.jpg',
             name: 'Изображение',
@@ -11,6 +11,7 @@ let cardsPizza = [
         btnMobile: 'от 600 R',
     },
     {
+        id: 'Pizza02',
         img: {
             src: './images/main-card/pepperoni-serce.jpg',
             name: 'Изображение',
@@ -22,6 +23,7 @@ let cardsPizza = [
         btnMobile: 'от 625 R;',
     },
     {
+        id: 'Pizza03',
         img: {
             src: './images/main-card/pirog-serce.jpg',
             name: 'Изображение',
@@ -33,6 +35,7 @@ let cardsPizza = [
         btnMobile: 'от 625 &#8381;',
     },
     {
+        id: 'Pizza04',
         img: {
             src: './images/main-card/cheese-chedder.jpg',
             name: 'Изображение',
@@ -44,6 +47,7 @@ let cardsPizza = [
         btnMobile: 'от 625 &#8381;',
     },
     {
+        id: 'Pizza05',
         img: {
             src: './images/main-card/ciplenok.jpg',
             name: 'Изображение',
@@ -55,6 +59,7 @@ let cardsPizza = [
         btnMobile: 'от 445 &#8381;',
     },
     {
+        id: 'Pizza06',
         img: {
             src: './images/main-card/salmon.jpg',
             name: 'Изображение',
@@ -66,6 +71,7 @@ let cardsPizza = [
         btnMobile: 'от 495 &#8381;',
     },
     {
+        id: 'Pizza07',
         img: {
             src: './images/main-card/cheese.jpg',
             name: 'Изображение',
@@ -77,6 +83,7 @@ let cardsPizza = [
         btnMobile: 'от 245 &#8381;',
     },
     {
+        id: 'Pizza08',
         img: {
             src: './images/main-card/pepperoni.jpg',
             name: 'Изображение',
@@ -344,12 +351,32 @@ function createCard(massive, massiveId, classLength) {
        // let el = document.createElement('div')
        // let el = document.getElementsByClassName('main-cards')
         el.innerHTML += card
-        document.getElementById(massiveId).append(el)
+
+    }
+    document.getElementById(massiveId).append(el)
+    for (let i = 0; i < massive.length; i++ ) {
+        let basketButton = el.querySelector('.main-button')
+        basketButton.addEventListener('click', openModal)
     }
 }
 
-function createSection() {
+
+let basket = document.querySelector('.main-button')
+let modal = document.querySelector('.product-card__container')
+let closeButton = modal.querySelector('.close-button')
+
+function openModal() {
+    let image = modal.querySelector('.product-card__image')
+    image.src = cardsPizza[1].img.src
+    modal.classList.remove('product-card__container_hidden')
+    console.log(modal)
 }
+basket.addEventListener('click', openModal)
+
+function  closeModal() {
+    modal.classList.add('product-card__container_hidden')
+}
+closeButton.addEventListener('click', closeModal)
 
 createCard(cardsPizza, 'pizza-cards', 'main-card_size-S')
 createCard(cardsCombo, 'combo-cards', 'main-card_size-S')
