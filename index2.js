@@ -358,9 +358,10 @@ let cardsDrinks = [
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////   CREATE CARD   //////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+let modal = document.querySelector('.product-card__container')
+let button = document.querySelector('.main-button')
 
-
-function createCard(massive, massiveId, classLength, ) {
+function createCard(massive, massiveId, classLength) {
     let el = document.createElement('div')
     el.className = 'main-cards'
     for (let i = 0; i < massive.length; i++){
@@ -374,7 +375,7 @@ function createCard(massive, massiveId, classLength, ) {
             <p class="main-text_small_14_gray main-card__text_small-width">${massive[i].description}</p>
             <div class="main-card__bottom">
                 <p class="main-card__text_16">${massive[i].cost}</p>
-                <button id="${massive[i].id}" type="button" class="main-button" onclick="openModal(event)">${massive[i].btn}</button>
+                <button id="${massive[i].id}" type="button" class="main-button" onclick="openPizzaModal(event)">${massive[i].btn}</button>
             </div>
             <button id="${massive[i].id}" type="button" class="main-button main-button_light button-price">${massive[i].btnMobile}</button>
          </div>
@@ -459,9 +460,7 @@ function createCard(massive, massiveId, classLength, ) {
 //        `
 //     document.querySelector('.product-card__container').append(modalWrapper)
 
-let modal = document.querySelector('.product-card__container')
-
-function openModal(event) {
+function openPizzaModal(event) {
     modal.classList.remove('product-card__container_hidden')
         let elem = cardsPizza.find(el => el.id === event.currentTarget.id)
         console.log(elem)
@@ -529,11 +528,35 @@ function openModal(event) {
                     <p class="ingridients-item__text">59 &#8381;</p>
                 </div>
             </div>
-            <button class="product-card__button">Добавить в корзину за 625 &#8381;</button>
+            <button class="product-card__button">Добавить в корзину за ${elem.cost}</button>
             <div class="close-container">
                 <img src="./images/product-card/close.svg" class="close-button" onclick="closeModal()">
             </div>
         </div>       
+       `
+    document.querySelector('.product-card__container').append(modalWrapper)
+}
+
+function openModal(event) {
+    modal.classList.remove('product-card__container_hidden')
+    let array = cardsCombo.concat(cardsStarters + cardsDrinks + cardDeserts)
+    let elem = array.id.find(el => el.id === event.currentTarget.id)
+    console.log(elem)
+    let modalWrapper = document.createElement('div')
+    modalWrapper.className = 'product-card'
+    modalWrapper.innerHTML = `
+        <div class="image__container">
+        <img class="product-card__image" src='${elem.img.src}>
+    </div>
+    <div class="main-container">
+        <h1 class="product-card__title">${elem.title}</h1>
+        <p class="product-card__description">16 шт</p>
+        <p class="product-card__description">${elem.subtitle}</p>
+        <button class="product-card__button">Добавить в корзину за ${elem.cost}</button>
+    </div>
+    <div class="close-container">
+        <img src="./images/product-card/close.svg" class="close-button">
+    </div>
        `
     document.querySelector('.product-card__container').append(modalWrapper)
 }
