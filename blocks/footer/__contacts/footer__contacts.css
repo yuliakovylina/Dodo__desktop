@@ -1,0 +1,24 @@
+@import url(./footer__contacts_apps.css);
+@import url(./footer__contacts_app.css);
+@import url(./footer__contacts_tel.css);
+@import url(./footer__contacts_tel_text.css);
+@import url(./footer__contacts_tel_text_email.css);
+
+
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+@media only screen and (max-width: 420px) {
+    .footer__contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 176px;
+        overflow: hidden;
+    }
+}

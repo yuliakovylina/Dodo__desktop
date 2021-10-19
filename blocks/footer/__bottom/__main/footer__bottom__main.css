@@ -1,0 +1,13 @@
+.footer__bottom__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 276px;
+}
+@media only screen and (max-width: 420px) {
+    .footer__bottom__main {
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 276px;
+    }
+}

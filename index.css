@@ -427,14 +427,12 @@ a {
 
 .footer__contacts_tel_text_email {
     opacity: 0.9;
-
 }
 
 .footer__middle {
     margin: 0;
     display: flex;
     width: 1060px;
-
 }
 
 .footer__middle__info {
@@ -469,7 +467,6 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 1060px;
-
 }
 
 .footer__bottom__main {

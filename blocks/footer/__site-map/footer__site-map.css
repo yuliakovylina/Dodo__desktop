@@ -1,0 +1,14 @@
+@import url(./__item/footer__site-map__item.css);
+@import url(./__item/footer__site-map__item_link.css);
+@import url(./__item/footer__site-map__item_link_heading.css);
+@import url(./__item/footer__site-map__item_text.css);
+
+.footer__site-map {
+    display: flex;
+}
+@media only screen and (max-width: 420px) {
+    .footer__site-map {
+        flex-direction: column;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}

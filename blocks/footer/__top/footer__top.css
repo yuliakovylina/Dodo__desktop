@@ -1,0 +1,19 @@
+.footer__top {
+    margin: 0;
+    min-height: 160px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+
+}
+
+@media only screen and (max-width: 420px) {
+    .footer__top {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 780px;
+        max-width: 278px;
+        margin-bottom: 0;
+    }
+}

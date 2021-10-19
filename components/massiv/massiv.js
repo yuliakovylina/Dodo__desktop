@@ -1,87 +1,102 @@
-let cardsPizza = [
-    {
+const cardsPizza = [
+    {   id: 'Pizza01',
         img: {
             src: './images/main-card/polovinki.jpg',
             name: 'Изображение',
         },
         title: 'Пицца из половинок',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Соберите свою пиццу 35 см с двумя разными вкусами',
         cost: 'от 600 &#8381;',
         btn: 'Собрать',
-        btnMobile: 'от 600 &#8381;',
+        btnMobile: 'от 600 R',
     },
     {
+        id: 'Pizza02',
         img: {
             src: './images/main-card/pepperoni-serce.jpg',
             name: 'Изображение',
         },
         title: 'Пепперони-сердце',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Пикантная пепперони, моцарелла, томатный соус',
         cost: 'от 625 &#8381;',
         btn: 'Выбрать',
-        btnMobile: 'от 625 &#8381;',
+        btnMobile: 'от 625 R;',
     },
     {
+        id: 'Pizza03',
         img: {
             src: './images/main-card/pirog-serce.jpg',
             name: 'Изображение',
         },
         title: 'Пирог-сердце',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Ананасы, брусника, сгущенное молоко',
         cost: 'от 625 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 625 &#8381;',
     },
     {
+        id: 'Pizza04',
         img: {
             src: './images/main-card/cheese-chedder.jpg',
             name: 'Изображение',
         },
         title: 'Чиззи чеддер',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус, чеснок, итальянские травы',
         cost: 'от 625 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 625 &#8381;',
     },
     {
+        id: 'Pizza05',
         img: {
             src: './images/main-card/ciplenok.jpg',
             name: 'Изображение',
         },
         title: 'Цыпленок блю чиз',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо',
         cost: 'от 445 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 445 &#8381;',
     },
     {
+        id: 'Pizza06',
         img: {
             src: './images/main-card/salmon.jpg',
             name: 'Изображение',
         },
         title: 'Нежный лосось',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Лосось, томаты черри, соус песто, моцарелла, соус альфредо',
         cost: 'от 495 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 495 &#8381;',
     },
     {
+        id: 'Pizza07',
         img: {
             src: './images/main-card/cheese.jpg',
             name: 'Изображение',
         },
         title: 'Сырная',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо',
         cost: 'от 245 &#8381;',
         btn: 'Выбрать',
         btnMobile: 'от 245 &#8381;',
     },
     {
+        id: 'Pizza08',
         img: {
             src: './images/main-card/pepperoni.jpg',
             name: 'Изображение',
         },
         title: 'Пепперони фреш',
+        subtitle: '30 см, традиционное тесто, 480 г',
         description: 'Пикантная пепперони,<br> увеличенная порция моцареллы, томаты, томатный соус',
         cost: 'от 645 &#8381;',
         btn: 'Выбрать',
@@ -89,8 +104,9 @@ let cardsPizza = [
     },
 ]
 
-export let cardsCombo = [
+const cardsCombo = [
     {
+        id: 'Combo01',
         img: {
             src: './images/combo.jpg',
             name: 'Изображение',
@@ -102,6 +118,19 @@ export let cardsCombo = [
         btnMobile: '599 &#8381;',
     },
     {
+        id: 'Combo02',
+        img: {
+            src: './images/combo.jpg',
+            name: 'Изображение',
+        },
+        title: '2 пиццы',
+        description: 'Самое поулярное комбо из 2 пицц 30см. Большой выбор',
+        cost: 'от 899 &#8381;',
+        btn: 'Собрать',
+        btnMobile: '899 &#8381;',
+    },
+    {
+        id: 'Combo03',
         img: {
             src: './images/combo.jpg',
             name: 'Изображение',
@@ -113,6 +142,7 @@ export let cardsCombo = [
         btnMobile: '749 &#8381;',
     },
     {
+        id: 'Combo04',
         img: {
             src: './images/combo.jpg',
             name: 'Изображение',
@@ -124,6 +154,7 @@ export let cardsCombo = [
         btnMobile: '449 &#8381;',
     },
     {
+        id: 'Combo05',
         img: {
             src: './images/combo.jpg',
             name: 'Изображение',
@@ -136,8 +167,9 @@ export let cardsCombo = [
     },
 ]
 
-export let cardsStarters = [
+const cardsStarters = [
     {
+        id: 'Starters01',
         img: {
             src: './images/starters/soup.jpg',
             name: 'Изображение',
@@ -149,6 +181,7 @@ export let cardsStarters = [
         btnMobile: '99 &#8381;',
     },
     {
+        id: 'Starters02',
         img: {
             src: './images/starters/soup.jpg',
             name: 'Изображение',
@@ -160,6 +193,7 @@ export let cardsStarters = [
         btnMobile: '149 &#8381;',
     },
     {
+        id: 'Starters03',
         img: {
             src: './images/starters/dodster.jpg',
             name: 'Изображение',
@@ -171,6 +205,7 @@ export let cardsStarters = [
         btnMobile: '159 &#8381;',
     },
     {
+        id: 'Starters04',
         img: {
             src: './images/starters/dodster-hot.jpg',
             name: 'Изображение',
@@ -182,6 +217,7 @@ export let cardsStarters = [
         btnMobile: '159 &#8381;',
     },
     {
+        id: 'Starters05',
         img: {
             src: './images/starters/dodster-chipotle.jpg',
             name: 'Изображение',
@@ -194,8 +230,9 @@ export let cardsStarters = [
     },
 ]
 
-export let cardDeserts = [
+const cardDeserts = [
     {
+        id: 'Deserts01',
         img: {
             src: './images/desserts/apple-pie.jpg',
             name: 'Изображение',
@@ -207,6 +244,7 @@ export let cardDeserts = [
         btnMobile: '99 &#8381;',
     },
     {
+        id: 'Deserts02',
         img: {
             src: './images/desserts/cheesecake.jpg',
             name: 'Изображение',
@@ -218,6 +256,7 @@ export let cardDeserts = [
         btnMobile: '149 &#8381;',
     },
     {
+        id: 'Deserts03',
         img: {
             src: './images/desserts/fondan.jpg',
             name: 'Изображение',
@@ -229,6 +268,7 @@ export let cardDeserts = [
         btnMobile: '159 &#8381;',
     },
     {
+        id: 'Deserts04',
         img: {
             src: './images/desserts/milkshake.jpg',
             name: 'Изображение',
@@ -240,6 +280,7 @@ export let cardDeserts = [
         btnMobile: '159 &#8381;',
     },
     {
+        id: 'Deserts05',
         img: {
             src: './images/desserts/milkshake.jpg',
             name: 'Изображение',
@@ -252,8 +293,9 @@ export let cardDeserts = [
     },
 ]
 
-export let cardsDrinks = [
+const cardsDrinks = [
     {
+        id: 'Drinks01',
         img: {
             src: './images/drinks/1.jpg',
             name: 'Изображение',
@@ -265,6 +307,7 @@ export let cardsDrinks = [
         btnMobile: '99 &#8381;',
     },
     {
+        id: 'Drinks01',
         img: {
             src: './images/drinks/2.jpg',
             name: 'Изображение',
@@ -276,6 +319,7 @@ export let cardsDrinks = [
         btnMobile: '149 &#8381;',
     },
     {
+        id: 'Drinks01',
         img: {
             src: './images/drinks/3.jpg',
             name: 'Изображение',
@@ -287,6 +331,7 @@ export let cardsDrinks = [
         btnMobile: '159 &#8381;',
     },
     {
+        id: 'Drinks01',
         img: {
             src: './images/drinks/4.jpg',
             name: 'Изображение',
@@ -298,6 +343,7 @@ export let cardsDrinks = [
         btnMobile: '159 &#8381;',
     },
     {
+        id: 'Drinks01',
         img: {
             src: './images/drinks/5.jpg',
             name: 'Изображение',
