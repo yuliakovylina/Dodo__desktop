@@ -1,0 +1,13 @@
+@import url(./__info/footer__middle__info.css);
+@import url(./__info/footer__middle__info_paragraph.css);
+
+.footer__middle {
+    margin: 0;
+    display: flex;
+    width: 1060px;
+}
+@media only screen and (max-width: 420px) {
+    .footer__middle {
+        display: none;
+    }
+}

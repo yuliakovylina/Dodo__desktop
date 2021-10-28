@@ -1,0 +1,13 @@
+.footer__site-map__item {
+    width: 154px;
+}
+@media only screen and (max-width: 420px) {
+    .footer__site-map__item {
+        width: 245px;
+        margin-bottom: 30px;
+    }
+
+    .footer__site-map__item:last-of-type {
+        margin-bottom: 7px;
+    }
+}

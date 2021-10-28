@@ -1,0 +1,28 @@
+@import url(./__top/footer__top.css);
+@import url(./__bottom/footer__bottom.css);
+@import url(./__contacts/footer__contacts.css);
+@import url(./__heading/footer__heading.css);
+@import url(./__middle/footer__middle.css);
+@import url(./__site-map/footer__site-map.css);
+@import url(./__socials/footer__socials.css);
+
+
+
+.footer {
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: #464C55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 420px) {
+    .footer {
+        width: 100%;
+        padding: 20px 16px 20px;
+        align-items: flex-start;
+    }
+}

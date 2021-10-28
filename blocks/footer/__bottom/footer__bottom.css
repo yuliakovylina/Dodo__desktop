@@ -1,0 +1,17 @@
+@import url(./__links/footer__bottom__links.css);
+@import url(./__main/footer__bottom__main.css);
+@import url(./__main/footer__bottom__main_img.css);
+
+.footer__bottom {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+}
+@media only screen and (max-width: 420px) {
+    .footer__bottom {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        max-width: 270px;
+    }
+}

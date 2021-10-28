@@ -1,0 +1,8 @@
+.footer__site-map__item_text {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 420px) {
+    .footer__site-map__item_text {
+        margin-bottom: 12px;
+    }
+}

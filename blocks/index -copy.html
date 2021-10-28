@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="ДОДО Пицца">
+    <meta name="keywords" content="пицца, доставка пиццы, заказть пиццу">
+    <meta name="author" content="Yulia Kovylina">
+    <link rel="stylesheet" href="index.css">
+    <title>Dodo Pizza</title>
+</head>
+<body>
+<div id="root" class="page">
+    <!--    <div id="prod-container" class="product-card__container product-card__container_hidden">-->
+    <!--    </div>-->
+    <!--        <header class="header main-padding">-->
+    <!--        <div class="header__top">-->
+    <!--            <img class="logo" src="./images/logotype-dodo.svg" alt="Логотип">-->
+    <!--            <img class="logo logo_mobile" src="./images/logo_mobile.svg" alt="Логотип">-->
+    <!--            <div class="header__top-text">-->
+    <!--                <p class="header__top-text">8 800 302-00-60</p>-->
+    <!--                <p class="main-text_small">Звонок бесплатный</p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <nav class="header__menu">-->
+    <!--            <ul class="header__menu__items">-->
+    <!--                <li class="header__menu__item"><a class="header__menu__link" href="#pizza">Пицца</a></li>-->
+    <!--                <li class="header__menu__item"><a class="header__menu__link" href="#combo">Комбо</a></li>-->
+    <!--                <li class="header__menu__item"><a class="header__menu__link" href="#starters">Закуски</a></li>-->
+    <!--                <li class="header__menu__item"><a class="header__menu__link" href="#deserts">Десерты</a></li>-->
+    <!--                <li class="header__menu__item"><a class="header__menu__link" href="drinks">Напитки</a></li>-->
+    <!--                <li class="header__menu__item"><a class="header__menu__link" href="others">Другие товары</a></li>-->
+    <!--            </ul>-->
+    <!--            <button class="main-button main-button_no-margin" type="submit">Корзина</button>-->
+    <!--        </nav>-->
+    <!--    </header>-->
+
+    <!--    <main class="main">-->
+
+    <!--        <section class="slider">-->
+    <!--            <div class="slider__box">-->
+    <!--                <img src="./images/%231.png" class="slider__box_image slider__box_image_desktop">-->
+    <!--                <img src="./images/slider_mobile.png" class="slider__box_image slider__box_image_mobile">-->
+    <!--            </div>-->
+    <!--            <div class="slider__box slider__box_mobile">-->
+    <!--                <img src="./images/%231.png" class="slider__box_image slider__box_image_desktop">-->
+    <!--                <img src="./images/slider_mobile.png" class="slider__box_image slider__box_image_mobile">-->
+    <!--            </div>-->
+    <!--        </section>-->
+
+    <!--        <section class="new-items">-->
+    <!--            <h3 class="heading_3_24px main-padding">Новое и популярное</h3>-->
+    <!--            <div class="new-items__cards main-padding">-->
+    <!--                <div class="new-items__card">-->
+    <!--                    <img class="new-items__card_image" src="./images/new_items/cesar_small.jpg" alt="">-->
+    <!--                    <div class="new-items__text">-->
+    <!--                        <p class="main-text_small_14">Цезарь</p>-->
+    <!--                        <p class="main-text_small_16">от 445 &#8381;</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="new-items__card">-->
+    <!--                    <img class="new-items__card_image" src="./images/new_items/salmon.jpg" alt="">-->
+    <!--                    <div class="new-items__text">-->
+    <!--                        <p class="main-text_small_14">Нежный лосось</p>-->
+    <!--                        <p class="main-text_small_16">от 495 &#8381;</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="new-items__card">-->
+    <!--                    <img class="new-items__card_image" src="./images/new_items/2pizzas.jpg" alt="">-->
+    <!--                    <div class="new-items__text">-->
+    <!--                        <p class="main-text_small_14">2пиццы</p>-->
+    <!--                        <p class="main-text_small_16">от 899 &#8381;</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="new-items__card">-->
+    <!--                    <img class="new-items__card_image" src="./images/new_items/carbonara.jpg" alt="">-->
+    <!--                    <div class="new-items__text">-->
+    <!--                        <p class="main-text_small_14">Карбонара</p>-->
+    <!--                        <p class="main-text_small_16">от 395 &#8381;</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </section>-->
+
+    <!--        <section class="mobile-menu">-->
+    <!--            <a class="mobile-menu__link"></a><button class="mobile-menu__button">Пицца</button></a>-->
+    <!--            <a class="mobile-menu__link"></a><button class="mobile-menu__button">Комбо</button></a>-->
+    <!--            <a class="mobile-menu__link"></a><button class="mobile-menu__button">Закуски</button></a>-->
+    <!--            <a class="mobile-menu__link"></a><button class="mobile-menu__button">Десерты</button></a>-->
+    <!--            <a class="mobile-menu__link"></a><button class="mobile-menu__button">Напитки</button></a>-->
+    <!--        </section>-->
+
+    <!--        <section class="pizza-items" id="pizza">-->
+    <!--            <h3 class="heading_3_24px heading_3_24px_hidden main-padding">Пицца</h3>-->
+    <!--            <div id='pizza-cards' class="main-padding"></div>-->
+    <!--        </section>-->
+
+    <!--        <section class="combo-items" id="combo">-->
+    <!--            <h3 class="heading_3_24px main-padding">Комбо</h3>-->
+    <!--            <div id='combo-cards' class="main-padding"></div>-->
+    <!--        </section>-->
+
+    <!--        <section class="starters-items" id="starters">-->
+    <!--            <h3 class="heading_3_24px main-padding">Закуски</h3>-->
+    <!--            <div id="starters-cards" class="main-padding"></div>-->
+    <!--        </section>-->
+
+    <!--        <section class="desserts-items" id="desserts">-->
+    <!--            <h3 class="heading_3_24px main-padding">Десерты</h3>-->
+    <!--            <div id="deserts-cards" class="main-padding"></div>-->
+    <!--        </section>-->
+
+    <!--        <section class="drinks-items" id="drinks">-->
+    <!--            <h3 class="heading_3_24px main-padding">Напитки</h3>-->
+    <!--            <div id="drinks-cards" class="main-padding"></div>-->
+    <!--        </section>-->
+    <!--    </main>-->
+
+    <!--<footer class="footer main-padding">-->
+    <!--    <div class="footer__top">-->
+    <!--        <nav class="footer__site-map">-->
+    <!--            <ul class="footer__site-map__item">-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link footer__site-map__item_link_heading" href="#">Додо Пицца</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">О нас</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Додо-книга</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Блог "Сила ума"</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Додо ИС</a></li>-->
+    <!--            </ul>-->
+    <!--            <ul class="footer__site-map__item">-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link footer__site-map__item_link_heading" href="#">Работа</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">В пиццерии</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">В контакт - центре</a></li>-->
+    <!--            </ul>-->
+    <!--            <ul class="footer__site-map__item">-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link footer__site-map__item_link_heading" href="#">Партнерам</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Франшиза</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Инвестиции</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Поставщикам</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Предложить помещение</a></li>-->
+    <!--            </ul>-->
+    <!--            <ul class="footer__site-map__item">-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link footer__site-map__item_link_heading" href="#">Это интересно</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Экскурсии и мастер-классы</a></li>-->
+    <!--                <li class="footer__site-map__item_text"><a class="footer__site-map__item_link" href="#">Корпоративные заказы</a></li>-->
+    <!--            </ul>-->
+    <!--        </nav>-->
+    <!--        <div class="footer__contacts">-->
+    <!--            <div class="footer__contacts_apps">-->
+    <!--                <a href="#"><img class="footer__contacts_app" src="./images/google-play.svg" alt="Иконка 'Google Play'"></a>-->
+    <!--                <a href="#"><img class="footer__contacts_app" src="./images/apple-store.svg" alt="Иконка 'App Store'"></a>-->
+    <!--            </div>-->
+    <!--            <div class="footer__contacts_tel">-->
+    <!--                <h4 class="footer__heading">8-800-302-00-60</h4>-->
+    <!--                <p class="footer__contacts_tel_text">Звонок бесплатный</p>-->
+    <!--            </div>-->
+    <!--            <p class="footer__contacts_tel_text footer__contacts_tel_email">feedback@dodopizza.com</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    <div class="footer__middle">-->
+    <!--        <div class="footer__middle__info">-->
+    <!--            <h4 class="footer__heading">1 396 362 874 ₽</h4>-->
+    <!--            <p class="footer__middle__info_paragraph">Выручка российской сети в этом месяце. В прошлом — 2 460 305 416 ₽</p>-->
+    <!--        </div>-->
+    <!--        <div class="footer__middle__info">-->
+    <!--            <h4 class="footer__heading">688 пиццерий</h4>-->
+    <!--            <p class="footer__middle__info_paragraph">в 14 странах, включая Китай, США и Великобританию</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    <hr>-->
+
+    <!--    <div class="footer__bottom">-->
+    <!--        <div class="footer__bottom__main">-->
+    <!--            <img class="footer__bottom__main_img" src="./images/Logo_text.svg" alt="Логотип 'ДодоПицца'">-->
+    <!--            <p class="footer__middle__info_paragraph hidden">© 2021</p>-->
+    <!--        </div>-->
+    <!--        <div class="footer__bottom__links">-->
+    <!--            <a class="footer__middle__info_paragraph" href="#">Правовая информация</a>-->
+    <!--            <a class="footer__middle__info_paragraph" href="#">Калорийность и состав</a>-->
+    <!--            <a class="footer__middle__info_paragraph" href="#">Помощь</a>-->
+    <!--        </div>-->
+    <!--        <div class="footer__socials">-->
+    <!--            <a href="#" class="footer__socials-item"><img src="./images/socials/fb.svg"></a>-->
+    <!--            <a href="#" class="footer__socials-item"><img src="./images/socials/ok.svg"></a>-->
+    <!--            <a href="#" class="footer__socials-item"><img src="./images/socials/inst.svg"></a>-->
+    <!--            <a href="#" class="footer__socials-item"><img src="./images/socials/vk.svg"></a>-->
+    <!--            <a href="#" class="footer__socials-item"><img src="./images/socials/youtube.svg"></a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</footer>-->
+
+</div>
+<!--<script src="./massiv.js"></script>-->
+<!--<script src="./index.js"></script>-->
+<!--<script type="module" src="./components/massiv.js"></script>-->
+<script type="module">
+    import app from './index.js'
+    app()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.footer__bottom__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 441px;
+}
+@media only screen and (max-width: 420px) {
+    .footer__bottom__links {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
