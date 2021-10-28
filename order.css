@@ -1,0 +1,296 @@
+@font-face {
+    src: url("./fonts/Nunito-Regular.ttf") format("truetype");
+    font-family: Nunito;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("./fonts/Nunito-SemiBold.ttf")  format("truetype");
+    font-family: Nunito;
+    font-weight: 600;
+}
+
+@font-face {
+    src: url("./fonts/Nunito-Bold.ttf") format("truetype");
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+div, p, h1, h2, h3, h4, h5, h6, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+    padding: 0;
+}
+
+svg {
+
+}
+
+.page {
+    /*min-width: 1180px;*/
+    margin: 0 auto;
+    font-family: Nunito;
+}
+
+.main-padding {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.main-button {
+    width: 104px;
+    height: 40px;
+    background-color: #F96900;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.main-button:hover {
+    cursor: pointer;
+}
+
+.button-price {
+    visibility: hidden;
+    display: none;
+}
+
+.main-button_no-margin {
+    margin-right: 0px;
+}
+
+.main-button_light {
+    background-color: #FFF0E6;
+    color: #D15700;
+}
+
+.main-card_light {
+    background: #FFF0E6;
+}
+
+.header {
+    margin: 0 auto;
+    padding-top: 25px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header__logo {
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    max-width: 1060px;
+}
+
+.header__steps {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 248px;
+    height: 48px;
+}
+
+
+.logo_mobile{
+    display: none;
+}
+
+.main {
+    margin: 70px auto;
+    width: 610px;
+}
+
+.main__title {
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.delivery {
+    display: flex;
+
+}
+
+label {
+
+    border: 1px solid red;
+}
+.ght {
+    display: flex;
+}
+input {
+
+}
+
+.navigation-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-button {
+    cursor: pointer;
+    width: 234px;
+    height: 48px;
+    border: none;
+    outline: none;
+    background-color: #F3F3F7;
+    border-radius: 1000px;
+}
+
+.nav-button_back {
+    color: #73798C;
+}
+
+.nav-button_submit {
+    background-color: #F96900;
+    color: white;
+}
+
+.footer {
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: #464C55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__top {
+    margin: 0;
+    min-height: 160px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+
+}
+
+.footer__site-map {
+    display: flex;
+}
+
+.footer__site-map__item {
+    width: 154px;
+}
+
+.footer__site-map__item_text {
+    margin-bottom: 10px;
+}
+
+.footer__site-map__item_link {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.7;
+}
+
+.footer__site-map__item_link_heading{
+    opacity: 1;
+    font-weight: 600;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__contacts_app {
+    width: 135px;
+    height: 40px;
+}
+
+.footer__contacts_tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer__contacts_tel_text {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    opacity: 0.5;
+    text-align: right;
+}
+
+.footer__contacts_tel_text_email {
+    opacity: 0.9;
+
+}
+
+.footer__middle {
+    margin: 0;
+    display: flex;
+    width: 1060px;
+
+}
+
+.footer__middle__info {
+    margin-right: 156px;
+}
+
+.footer__heading {
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.footer__middle__info_paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.7;
+    max-width: 299px;
+}
+
+hr {
+    margin: 40px 0 40px;
+    opacity: 0.7;
+    width: 1060px;
+}
+
+.footer__bottom {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+
+}
+
+.footer__bottom__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 276px;
+}
+
+.footer__bottom__main_img {
+    width: 191px;
+}
+
+.footer__bottom__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 441px;
+}
