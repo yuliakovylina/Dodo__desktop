@@ -25,3 +25,10 @@ export const createCard = (massive, massiveId, classLength) => {
     return el.innerHTML
 }
 
+// const createCard = (massive, massiveID, classLength) => {
+//     let el = document.createElement('section')
+//     el.className = 'pizza-items'
+//     for(let i = 0; i < massive.length; i++) {
+//         let elem = document.createElement()
+//     }
+// }
